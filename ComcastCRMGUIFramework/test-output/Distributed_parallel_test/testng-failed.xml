@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Distributed_parallel_test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.comcast.crm.generic.listenerutility.ListenerImp"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="OrgTest(failed)">
+    <classes>
+      <class name="com.comcast.crm.orgtest.OrgTest">
+        <methods>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="validateOrgIndustryType"/>
+          <include name="configBM"/>
+          <include name="deleteOrgName"/>
+          <include name="configAM"/>
+          <include name="validateOrgname"/>
+        </methods>
+      </class> <!-- com.comcast.crm.orgtest.OrgTest -->
+    </classes>
+  </test> <!-- OrgTest(failed) -->
+</suite> <!-- Failed suite [Distributed_parallel_test] -->
