@@ -28,6 +28,7 @@ public class CreateOrgTest {
 				ExcelUtility eLib=new ExcelUtility();
 				JavaUtility jLib=new JavaUtility();
 				WebDriverUtility wLib=new WebDriverUtility();
+				WebDriverUtility wLib2=new WebDriverUtility();
 				
 				//Using JSON File for common data input
 				String browser=pLib.getDataFromPropertiesFile("browser");
